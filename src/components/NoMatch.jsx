@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 
 export default function NoMatch() {
   return (
-    <div className='center'>
-        <h2 className="primary">Looks like you are lost. Go to <Link to={'/home'}>Home</Link></h2>
-    </div>
+    <h2>Looks like you are lost! Try to go <Link to={'/'}>Home</Link></h2>
   )
 }

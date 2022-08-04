@@ -19,10 +19,14 @@ code {
   padding: 32px;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  gap: 12px;
-  padding: 0;
-  font-size: 20px;
+a {
+  margin-right: 12px;
+  font-size: 24px;
+  padding: 4px;
+  color: black;
+}
+
+a:hover {
+  background-color: orange;
+  color: white;
 }

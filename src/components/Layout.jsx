@@ -2,29 +2,17 @@ import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
 export default function Layout() {
-    return (
-        <div className='main-container'>
-            <h1>Welcome to the Best Email Client!</h1>
-
-            <p>Let's try and understand Routing</p>
-
+  return (
+    <div className='main-container'>
+        <div className="header">
+            <h1>Best Email Client</h1>
             <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/inbox">Inbox</Link>
-                    </li>
-                </ul>
+                <Link to={''}>Home</Link>
+                <Link to={'about'}>About</Link>
+                <Link to={'inbox'}>Inbox</Link>
             </nav>
-
-            <hr />
-
-            <Outlet />
         </div>
-    )
+        <Outlet />
+    </div>
+  )
 }
